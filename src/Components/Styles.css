@@ -1,0 +1,76 @@
+* {
+    background-color: gray;
+}
+
+.container {
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    border: 2px solid black;
+    width: 353px;
+    height: 520px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px black;
+}
+
+.headTitle {
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: lightgrey;
+    font-weight: bold;
+}
+
+.form {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: lightgrey;
+}
+
+.form-title {
+    font-size: 19px;
+    background-color: lightgrey;
+ }
+
+.btn-default {
+    width: 94%;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn-default:hover {
+    background-color: rgb(61, 61, 61);
+}
+
+.workout-box {
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: lightgrey;
+    height: 200px;
+}
+
+.exercise {
+    border: 1px solid grey;
+    background-color: lightgrey;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+}
