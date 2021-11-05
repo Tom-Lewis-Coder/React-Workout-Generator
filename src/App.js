@@ -24,7 +24,7 @@ function App() {
   return (
     <div className='container' >
       <Header title={'Random Workout Generator'} />
-      <Form title={'Choose difficulty and complete 3 times or change each time for variation. Rest 1 min between circuits'} onChange={getDifficulty} />
+      <Form title={'Choose Difficulty'} onChange={getDifficulty} />
       <Button onClick={getWorkout} title={'Get Workout'} />
       <WorkoutDisplay workout={workout} />
     </div>
