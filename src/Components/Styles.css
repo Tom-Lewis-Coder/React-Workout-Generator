@@ -9,7 +9,7 @@
     position: relative;
     border: 2px solid black;
     width: 353px;
-    height: 520px;
+    height: 529px;
     border-radius: 10px;
     box-shadow: 0 10px 20px black;
 }
@@ -27,16 +27,25 @@
 
 .form {
     text-align: center;
-    padding: 10px;
-    margin: 10px;
+    margin: 5px 10px 5px 10px;
     border: 1px solid black;
     border-radius: 10px;
     background-color: lightgrey;
+    padding: 10px 10px 5px 10px;
 }
 
 .form-title {
-    font-size: 19px;
+    font-size: 21px;
     background-color: lightgrey;
+ }
+
+p {
+    background-color: lightgray;
+ }
+
+.radio {
+     background-color: lightgray;
+     padding: 5px;
  }
 
 .btn-default {
@@ -44,8 +53,8 @@
     background-color: black;
     color: white;
     border: 1px solid black;
-    margin: 10px;
-    padding: 5px;
+    margin: 5px 10px 5px 10px;
+    padding: 5px 10px 5px 10px;
     text-align: center;
     border-radius: 10px;
     font-size: 15px;
@@ -59,8 +68,8 @@
 .workout-box {
     font-size: 15px;
     text-align: center;
-    padding: 10px;
-    margin: 10px;
+    padding: 5px 10px 5px 10px;
+    margin: 5px 10px 5px 10px;
     border: 1px solid black;
     border-radius: 10px;
     background-color: lightgrey;
