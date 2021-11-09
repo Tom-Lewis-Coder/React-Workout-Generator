@@ -83,3 +83,9 @@ p {
     font-weight: bold;
     border-radius: 5px;
 }
+
+.ex {
+    background-color: lightgray;
+    height: 30px;
+    padding-top: 3px;
+}
