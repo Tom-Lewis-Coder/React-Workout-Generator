@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Header from './Components/Header'
 import Form from './Components/Form'
 import Button from './Components/Button'
@@ -21,11 +21,15 @@ function App() {
     setWorkout(ExerciseList[2].map(subArr => subArr[Math.floor(Math.random() * subArr.length)]))
   }
 
+  useEffect(() => 
+    setWorkout(['Press Workout to Start!!'])
+  , [])
+
   return (
     <div className='container' >
       <Header title={'Random Workout Generator'} />
       <Form title={'Choose Difficulty'} onChange={getDifficulty} />
-      <Button title={'Get Workout'} onClick={getWorkout} />
+      <Button title={'Workout'} onClick={getWorkout} />
       <WorkoutDisplay workout={workout} />
     </div>
   )
