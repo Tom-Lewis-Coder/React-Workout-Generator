@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import Header from './Components/Header'
 import Form from './Components/Form'
 import Button from './Components/Button'
@@ -8,7 +8,7 @@ import './Components/Styles.css'
 
 function App() {
 
-  const [ workout, setWorkout ] = useState([])
+  const [ workout, setWorkout ] = useState(['Press Workout to Start!!'])
   const [ difficulty, setDifficulty ] = useState('medium')
 
   const getDifficulty = (e) => {
@@ -20,10 +20,6 @@ function App() {
     difficulty === 'medium' ? setWorkout(ExerciseList[1].map(subArr => subArr[Math.floor(Math.random() * subArr.length)])) :
     setWorkout(ExerciseList[2].map(subArr => subArr[Math.floor(Math.random() * subArr.length)]))
   }
-
-  useEffect(() => 
-    setWorkout(['Press Workout to Start!!'])
-  , [])
 
   return (
     <div className='container' >
