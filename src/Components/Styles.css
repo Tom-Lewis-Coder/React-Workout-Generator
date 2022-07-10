@@ -4,12 +4,12 @@
 
 .container {
     background-color: white;
+    position: relative;
     margin-left: auto;
     margin-right: auto;
-    position: relative;
     border: 2px solid black;
     width: 353px;
-    height: 529px;
+    height: 585px;
     border-radius: 10px;
     box-shadow: 0 10px 20px black;
 }
@@ -20,7 +20,7 @@
     padding: 10px;
     margin: 10px;
     border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: lightgrey;
     font-weight: bold;
 }
@@ -29,7 +29,7 @@
     text-align: center;
     margin: 5px 10px 5px 10px;
     border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: lightgrey;
     padding: 10px 10px 5px 10px;
 }
@@ -43,11 +43,6 @@ p {
     background-color: lightgray;
  }
 
-.radio {
-     background-color: lightgray;
-     padding: 5px;
- }
-
 .btn-default {
     width: 94%;
     background-color: black;
@@ -56,13 +51,15 @@ p {
     margin: 5px 10px 5px 10px;
     padding: 5px 10px 5px 10px;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 5px;
     font-size: 15px;
     cursor: pointer;
 }
 
 .btn-default:hover {
-    background-color: rgb(61, 61, 61);
+    color: black;
+    background-color: gray;
+    font-weight: bold;
 }
 
 .workout-box {
@@ -71,21 +68,65 @@ p {
     padding: 5px 10px 5px 10px;
     margin: 5px 10px 5px 10px;
     border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: lightgrey;
     height: 200px;
 }
 
 .exercise {
-    border: 1px solid grey;
     background-color: lightgrey;
     text-transform: uppercase;
     font-weight: bold;
     border-radius: 5px;
+    font-family: 'poppins', sans-serif;
 }
 
 .ex {
     background-color: lightgray;
     height: 30px;
     padding-top: 3px;
+}
+
+input[type='radio'] {
+    display: none;
+}
+
+label {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    font-family: 'poppins', sans-serif;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 2.5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10px;
+    width: 75px;
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+label:before {
+    content: '';
+    height: 10px;
+    width: 10px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+input[type='radio']:checked + label {
+    background-color: gray;
+    color: black;
+}
+
+input[type='radio']:checked + label:before {
+    height: 10px;
+    width: 10px;
+    border: 3px solid white;
+    background-color: black;
 }
