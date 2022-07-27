@@ -1,4 +1,16 @@
+# Random Workout Generator App
+
+This is an app designed to provide users with a quick, effective, minimal equipment workout. It is especially helpful for people who are traveling, pushed for time, or unable to get to a gym. 
+It is very easy to use with only two buttons to press before returning the desired workout. 
+There are 3 levels of difficulty to choose from, which caters for beginner progression or simply users wishing to do less intense workouts (on rest days etc). 
+I replaced the standard radio buttons with customised ones to improve the look and UX. 
+Have a look at the demo below. 
+
 ![](workout.gif)
+
+## Tech
+
+This web application was built with ReactJS/CSS
 
 # Getting Started with Create React App
 
